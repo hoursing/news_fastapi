@@ -5,7 +5,7 @@
 - py -3 -m venv venv
 
 # install fastapi library
-- pip install "fastapi[all]"
+- pip install -r requirements.txt
 
 
 # Execute Fast API
