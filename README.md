@@ -1,13 +1,11 @@
 # Overview
 - The project demo use fast API framework
 
-
-# Install
-- pip install -m fastapi[full]
-
-
 # Create Environment
 - py -3 -m venv venv
+
+# install fastapi library
+- pip install "fastapi[all]"
 
 
 # Execute Fast API
