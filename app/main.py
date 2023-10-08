@@ -1,12 +1,10 @@
-from typing import Optional
-from fastapi import FastAPI, Response, status, HTTPException
-from fastapi.params import Body
-import psycopg2
-from pydantic import BaseModel # Use to validate input
-from random import randrange
-from psycopg2.extras import RealDictCursor
 import time
+from typing import Optional
 
+import psycopg2
+from fastapi import FastAPI, HTTPException, Response, status
+from psycopg2.extras import RealDictCursor
+from pydantic import BaseModel  # Use to validate input
 
 app = FastAPI()
 
@@ -97,7 +95,8 @@ def delete_post(id: int):
     conn.commit()
 
     if delete_post is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"post with id {id} does not exist")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail=f"post with id {id} does not exist")
 
     return {"message": "post was successfully deleted"}
 
@@ -109,6 +108,7 @@ def update_post(id: int, post: Post):
     updated_post = cursor.fetchone()
 
     if updated_post is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail= f"post with id {id} does not exist")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail= f"post with id {id} does not exist")
 
     return {'data': updated_post}
