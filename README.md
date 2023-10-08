@@ -10,7 +10,7 @@
 
 # Execute Fast API
 - https://fastapi.tiangolo.com/tutorial/first-steps/
-- uvicorn main:app --reload
+- uvicorn app.main:app --reload
 
 # api
 - POST  /posts
