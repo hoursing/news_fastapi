@@ -10,3 +10,4 @@ class Post(Base):
     title = Column(String, nullable=False)
     content = Column(String)
     is_published = Column(Boolean, default=False)
+    
