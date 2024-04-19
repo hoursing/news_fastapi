@@ -13,7 +13,7 @@
 - pip install -r requirements.txt
 
 # Create Postgres DB:
-- Go to docker folder, run command: ./postgres.sh
+- Go to docker folder, run command: sh postgres.sh
 - `host`: localhost
 - `DB`: postgres
 - `User`: postgres

@@ -20,7 +20,7 @@ my_posts = [{"title": "title of post 1", "content": "content of post 1", "id": 1
 
 while True:
     try:
-        conn = psycopg2.connect(host='localhost', database='fastapi', user='admin_fastapi', password='123456',
+        conn = psycopg2.connect(host='localhost', database='postgres', user='postgres', password='123456',
                                 cursor_factory=RealDictCursor)
         cursor = conn.cursor()
         print('Database connection was successfully')

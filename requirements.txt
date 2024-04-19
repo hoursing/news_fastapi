@@ -1,4 +1,4 @@
 fastapi==0.103.2
 SQLAlchemy==2.0
-# psycopg2==2.9 # use on windown 
-psycopg2-binary==2.9.9 # use on Macos
+psycopg2==2.9.9 # use on windown 
+
