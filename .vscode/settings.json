@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
-        "psycopg"
+        "psycopg",
+        "sessionmaker",
+        "sqlalchemy"
     ],
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
